@@ -1,0 +1,15 @@
+title: healthcheckd
+email: jon@sprig.gs
+description: >-
+  A health check daemon for AWS ALB/NLB with Prometheus metrics, packaged as a single binary for Debian and RPM systems.
+baseurl: ""
+url: "https://healthcheckd.github.io"
+github_username: healthcheckd
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+exclude:
+  - tools/
+  - doc/
