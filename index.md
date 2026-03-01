@@ -25,7 +25,7 @@ wget -qO- {{ site.url }}/healthcheckd.asc | sudo tee /etc/apt/keyrings/healthche
 Next, create the source in `/etc/apt/sources.list.d/`:
 
 ```
-echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/healthcheckd.asc] {{ site.url }}/deb stable main" | sudo tee /etc/apt/sources.list.d/healthcheckd.list >/dev/null
+echo "deb [arch=all signed-by=/etc/apt/keyrings/healthcheckd.asc] {{ site.url }}/deb stable main" | sudo tee /etc/apt/sources.list.d/healthcheckd.list >/dev/null
 ```
 
 Then run `apt update && apt install -y healthcheckd`.
